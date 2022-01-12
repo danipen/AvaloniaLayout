@@ -1,0 +1,56 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="AvaloniaLayout.MainWindow"
+        Title="AvaloniaLayout">
+    <DockPanel>
+        <DockPanel Margin="5" DockPanel.Dock="Top" Background="LightGreen">
+            <StackPanel Spacing="5" Orientation="Horizontal">
+                <Button Content="Refresh" />
+                <Button Content="Toggle" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <TextBlock Text="Filter" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+                <TextBox Margin="5 0 0 0" HorizontalAlignment="Right" Width="150"/>
+            </StackPanel>
+        </DockPanel>
+        <DockPanel Margin="5" DockPanel.Dock="Bottom" Background="LightPink">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Spacing="5">
+                <Button Content="Accept" />
+                <Button Content="Cancel" />
+            </StackPanel>
+        </DockPanel>
+        <Grid Background="LightSkyBlue" RowDefinitions="*,*" ColumnDefinitions="*,*">
+            <DockPanel Margin="5 5 2.5 2.5" Grid.Row="0" Grid.Column="0" Background="LightYellow">
+                <StackPanel Spacing="5" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button HorizontalContentAlignment="Center" HorizontalAlignment="Stretch"  Content="Button #1"></Button>
+                    <Button HorizontalContentAlignment="Center" HorizontalAlignment="Stretch"  Content="Button ----- 2"></Button>
+                    <Button HorizontalContentAlignment="Center" HorizontalAlignment="Stretch"  Content="Button3"></Button>
+                </StackPanel>
+            </DockPanel>
+            <DockPanel Margin="2.5 5 5 2.5" Grid.Row="0" Grid.Column="1" Background="LightYellow">
+                <StackPanel Spacing="5" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button HorizontalContentAlignment="Center" HorizontalAlignment="Stretch" Content="Button #4"></Button>
+                    <Button HorizontalContentAlignment="Center" HorizontalAlignment="Stretch" Content="Button ----- 5"></Button>
+                    <Button HorizontalContentAlignment="Center" HorizontalAlignment="Stretch"  Content="Button 6"></Button>
+                </StackPanel>
+            </DockPanel>
+            <DockPanel Margin="5 2.5 2.5 5" Grid.Row="1" Grid.Column="0" Background="LightYellow">
+                <StackPanel Spacing="5" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button HorizontalContentAlignment="Center" HorizontalAlignment="Stretch" Content="Button #7"></Button>
+                    <Button HorizontalContentAlignment="Center" HorizontalAlignment="Stretch" Content="Button ----- 8"></Button>
+                    <Button HorizontalContentAlignment="Center" HorizontalAlignment="Stretch" Content="Button 9"></Button>
+                </StackPanel>
+            </DockPanel>
+            <DockPanel Margin="2.5 2.5 5 5" Grid.Row="1" Grid.Column="1" Background="LightYellow">
+                <StackPanel Spacing="5" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button HorizontalContentAlignment="Center" HorizontalAlignment="Stretch"  Content="Button #10"></Button>
+                    <Button HorizontalContentAlignment="Center" HorizontalAlignment="Stretch"  Content="Button ----- 11"></Button>
+                    <Button HorizontalContentAlignment="Center" HorizontalAlignment="Stretch"  Content="Button 12"></Button>
+                </StackPanel>
+            </DockPanel>
+        </Grid>
+    </DockPanel>
+</Window>
